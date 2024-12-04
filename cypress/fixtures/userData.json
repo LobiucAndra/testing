@@ -1,0 +1,18 @@
+{
+    "student": {
+      "email": "andra.lobiuc@student.usv.ro",
+      "password": "andra"
+    },
+    "profesor": {
+      "email": "george.mahalu1@usm.ro",
+      "password": "george"
+    },
+    "sef_semigrupa": {
+    "email": "andrei.aluculesei@student.usv.ro",
+    "password": "Student072741"
+    },
+    "secretar": {
+      "email": "laura@usm.ro",
+      "password": "laura"
+    }
+  }
