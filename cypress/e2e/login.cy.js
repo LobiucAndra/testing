@@ -11,13 +11,13 @@ describe('Login Functionality', () => {
         cy.contains('button', 'Login').click();
   
         // Verifică dacă utilizatorul este redirecționat pe dashboard
-        cy.url().should('include', '/exams'); // Înlocuiește cu URL-ul corect
+        cy.url().should('include', '/exams'); 
       });
     });
   
     it('should log in successfully as profesor', () => {
       cy.fixture('userData').then((user) => {
-        cy.visit('/login'); // Înlocuiește cu URL-ul corect al paginii de login
+        cy.visit('/login'); 
   
         // Introduce email-ul și parola pentru profesor
         cy.get('input[type="email"]').type(user.profesor.email);
@@ -27,13 +27,13 @@ describe('Login Functionality', () => {
         cy.contains('button', 'Login').click();
   
         // Verifică dacă utilizatorul este redirecționat pe dashboard
-        cy.url().should('include', 'view_requests'); // Înlocuiește cu URL-ul corect
+        cy.url().should('include', 'view_requests'); 
       });
     });
   
     it('should log in successfully as secretar', () => {
       cy.fixture('userData').then((user) => {
-        cy.visit('/login'); // Înlocuiește cu URL-ul corect al paginii de login
+        cy.visit('/login'); 
   
         // Introduce email-ul și parola pentru secretar
         cy.get('input[type="email"]').type(user.secretar.email);
@@ -43,13 +43,13 @@ describe('Login Functionality', () => {
         cy.contains('button', 'Login').click();
   
         // Verifică dacă utilizatorul este redirecționat pe dashboard
-        cy.url().should('include', '/create_teachers'); // Înlocuiește cu URL-ul corect
+        cy.url().should('include', '/create_teachers'); 
       });
     });
   
     it('should log in successfully as sef semigrupa', () => {
       cy.fixture('userData').then((user) => {
-        cy.visit('/login'); // Înlocuiește cu URL-ul corect al paginii de login
+        cy.visit('/login'); 
   
         // Introduce email-ul și parola pentru șeful de semigrupă
         cy.get('input[type="email"]').type(user.sef_semigrupa.email);
@@ -59,7 +59,7 @@ describe('Login Functionality', () => {
         cy.contains('button', 'Login').click();
   
         // Verifică dacă utilizatorul este redirecționat pe dashboard-ul șefului de semigrupă
-        cy.url().should('include', '/teachers'); // Înlocuiește cu URL-ul corect
+        cy.url().should('include', '/teachers'); 
       });
     });
   });
