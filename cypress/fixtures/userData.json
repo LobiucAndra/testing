@@ -4,8 +4,8 @@
       "password": "andra"
     },
     "profesor": {
-      "email": "george.mahalu1@usm.ro",
-      "password": "george"
+      "email": "george.mahalu@usm.ro",
+      "password": "parola"
     },
     "sef_semigrupa": {
     "email": "andrei.aluculesei@student.usv.ro",
@@ -16,3 +16,5 @@
       "password": "laura"
     }
   }
+
+
